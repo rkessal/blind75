@@ -14,8 +14,8 @@ We define two variables i and n, where i is initialized to 0 and n is assigned t
 
 ```java
 while (i < n && intervals[i][1] < newInterval[0]) {
-result.add(intervals[i]);
-i++;
+  result.add(intervals[i]);
+  i++;
 }
 ```
 
@@ -29,9 +29,9 @@ We initialize an integer array mergedInterval with the values of newInterval.
 
 ```java
 while (i < n && intervals[i][0] <= newInterval[1]) {
-mergedInterval[0] = Math.min(mergedInterval[0], intervals[i][0]);
-mergedInterval[1] = Math.max(mergedInterval[1], intervals[i][1]);
-i++;
+  mergedInterval[0] = Math.min(mergedInterval[0], intervals[i][0]);
+  mergedInterval[1] = Math.max(mergedInterval[1], intervals[i][1]);
+  i++;
 }
 ```
 
@@ -45,8 +45,8 @@ We add the merged interval to result.
 
 ```java
 while (i < n) {
-result.add(intervals[i]);
-i++;
+  result.add(intervals[i]);
+  i++;
 }
 ```
 
